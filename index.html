@@ -1,0 +1,300 @@
+<!-- ===================== index.html ===================== -->
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alif | Portofolio</title>
+
+  <!-- Favicon Logo (Logo di Tab Browser) -->
+  <link rel="icon" type="image/png" href="images/cv2.jpeg">
+
+  <!-- CSS External -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav id="navbar">
+    <div class="logo" id="logo">Alif Juney M.</div>
+    <ul>
+      <li><a href="#home">Beranda</a></li>
+      <li><a href="#about">Tentang saya</a></li>
+      <li><a href="#portfolio">Portofolio</a></li>
+      <li><a href="#contact">Kontak</a></li>
+    </ul>
+    <button class="toggle-btn" onclick="toggleDarkMode()">Dark</button>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="home">
+    <img src="images/cv2.jpeg" class="profile-img" alt="Profile">
+   <h1>Halo, Saya <span class="typing"></span></h1>
+    <p>Saya adalah seorang pelajar yang bersemangat dalam pengembangan web dan siap belajar serta berkembang di dunia industri.</p>
+    <a href="#portfolio" class="btn">Lihat Portofolio</a>
+    <div class="floating-photos">
+      <div class="photo-particles"></div>
+</div>
+  </section>
+ 
+ <section id="about" class="about-section">
+  <div class="about-container">
+
+    <!-- KIRI (Tentang Saya) -->
+    <div class="about-right">
+      <div class="glass-about">
+        <h2>Tentang Saya</h2>
+        <p>
+          Saya adalah pelajar SMK jurusan Rekayasa Perangkat Lunak yang memiliki semangat tinggi dalam pengembangan web.
+          Saya terus belajar membangun aplikasi berbasis web dan siap berkembang melalui program magang profesional.
+        </p>
+      </div>
+    </div>
+
+    <!-- KANAN (Soft Skill) -->
+    <div class="about-left">
+      <h3>Soft Skill</h3>
+
+      <div class="tech-grid">
+        <div class="tech-item">
+          <span>🧠 Problem Solving</span>
+        </div>
+
+        <div class="tech-item">
+          <span>🤝 Kerja Tim</span>
+        </div>
+
+        <div class="tech-item">
+          <span>🗣️ Komunikasi</span>
+        </div>
+
+        <div class="tech-item">
+          <span>⏱️ Manajemen Waktu</span>
+        </div>
+
+        <div class="tech-item">
+          <span>🎯 Disiplin & Tanggung Jawab</span>
+        </div>
+
+        <div class="tech-item">
+          <span>🚀 Cepat Belajar</span>
+        </div>
+      </div>
+
+      <a href="images/CV ALIF.pdf" download class="btn-download">
+        Download CV
+      </a>
+    </div>
+
+  </div>
+</section>
+
+  <!-- Portfolio -->
+<!-- Portfolio -->
+<section id="portfolio" class="reveal">
+  <h2 style="text-align:center;">Portofolio</h2>
+
+  <div class="projects">
+
+    <!-- PRESTASI -->
+    <div class="card" onclick="toggleDetail('prestasi')">
+      <h3>Prestasi</h3>
+      <div class="detail" id="prestasi">
+
+        <div class="achievement pdf-box">
+          <iframe src="images/KOLABORASI.pdf"></iframe>
+          <div class="desc">
+            <h4>Sertifikat Kolaborasi</h4>
+            <p>Didapatkan setelah menyelasaikan modul dari clas gamelab</p>
+          </div>
+        </div>
+
+        <div class="achievement pdf-box">
+          <iframe src="images/KOMUNIKASI.pdf"></iframe>
+          <div class="desc">
+            <h4>Sertifikat Komunikasi</h4>
+            <p>Didapatkan setelah menyelasaikan modul dari clas gamelab</p>
+          </div>
+        </div>
+           <div class="achievement pdf-box">
+          <iframe src="images/kreativitas.pdf"></iframe>
+          <div class="desc">
+            <h4>Sertifikat kreativitas</h4>
+            <p>Didapatkan setelah menyelasaikan modul dari clas gamelab</p>
+          </div>
+        </div>
+ <div class="achievement pdf-box">
+          <iframe src="images/SERTIFIKAT POLA PIKIR KRITIS.pdf"></iframe>
+          <div class="desc">
+            <h4>Sertifikat Pola Pikir Kritis</h4>
+            <p>Didapatkan setelah menyelasaikan modul dari clas gamelab</p>
+          </div>
+        </div>
+
+        <div class="achievement pdf-box">
+          <img src="images/pr5.jpeg">
+          <div class="desc">
+            <h4>Peringkat 1</h4>
+            <p>Didapatkan saat kelas 1 SMP Semester Ganjil</p>
+          </div>
+        </div>
+
+          <div class="achievement pdf-box">
+          <img src="images/pr6.jpeg">
+          <div class="desc">
+            <h4>Peringkat 1</h4>
+            <p>Didapatkan Saat Kelas 1 SMP Semester Genap</p>
+          </div>
+        </div>
+
+          <div class="achievement pdf-box">
+          <img src="images/pr3.jpeg">
+          <div class="desc">
+            <h4>Peringkat 2</h4>
+            <p>Didapatkan Saat kelas 2 SMP Semester Ganjil</p>
+          </div>
+        </div>
+
+          <div class="achievement pdf-box">
+          <img src="images/pr2.jpeg">
+          <div class="desc">
+            <h4>Peringkat 2</h4>
+            <p>Didapatkan Saat Kelas 2 SMP Semester Genap</p>
+          </div>
+        </div>
+
+          <div class="achievement pdf-box">
+          <img src="images/pr4.jpeg">
+          <div class="desc">
+            <h4>Peringkat 2</h4>
+            <p>Didapatkan Saat kelas 3 SMP Semester Ganjil</p>
+          </div>
+        </div>
+
+          <div class="achievement pdf-box">
+          <img src="images/pr1.jpeg">
+          <div class="desc">
+            <h4>Peringkat 2</h4>
+            <p>Didapatkan Saat Kelas 3 SMP Semester Genap</p>
+          </div>
+        </div>
+
+
+          <div class="achievement pdf-box">
+          <img src="images/pr7.jpeg">
+          <div class="desc">
+            <h4>Sertifikat Pelatihan Eco Fashion</h4>
+            <p>Didapatkan setelah mengikuti pelatihan echo fashion</p>
+          </div>
+        </div>
+
+        <div class="achievement pdf-box">
+         <iframe src="images/sfpal.pdf"></iframe>
+          <div class="desc">
+            <h4>Sertifikat Lomba Palcomtech</h4>
+            <p>Didapatkan saat mengikuti olimpiade Palcomtech dalam bidang Matematika</p>
+          </div>
+        </div>
+  
+    
+     
+    <!-- PROJECT -->
+    <div class="card" onclick="toggleDetail('project')">
+      <h3>Project yang Pernah Dibikin</h3>
+      <div class="detail" id="project">
+
+        <div class="achievement">
+          <img src="images/Pendataan siswa.png">
+          <div class="desc">
+            <h4>Aplikasi Desktop CRUD</h4>
+           <b><p>Menggunakan</b> :bahasa C#,microsoft visual studio 2022,MySQL Database</p>
+           <b> <p>Fungsi Program <br></b>
+           insert data siswa <br>
+          Update data siswa <br>
+          Delete data siswa <br>
+          Search data siswa <br>
+          Tampil di DataGridView</p>
+          </div>
+        </div>
+
+        <div class="achievement">
+          <img src="images/webberita.png">
+          <div class="desc">
+            <h4>Website Berita</h4>
+            <p>Saya membangun sebuah website portal berita dinamis menggunakan Laravel dengan sistem routing custom tanpa database.
+<br>
+              Website ini memiliki fitur kategori berita (News, Sport, Finance), halaman detail berita, sidebar interaktif, serta animasi modern menggunakan CSS.
+<br>
+              Project ini dibuat untuk melatih pemahaman saya tentang:
+<br>
+              Routing Laravel
+<br>
+              Struktur data array multidimensi
+<br>
+              Dynamic content rendering
+<br>
+              Layout reusable function
+<br>
+              UI/UX modern dengan animasi CSS</p>
+          </div>
+        </div>
+
+        <div class="achievement">
+          <img src="images/job8.png">
+          <div class="desc">
+            <h4>Mengembangkan aplikasi berbasis komponen menggunakan Vue.js 3</h4>
+            <p>di aplikasi ini kita bisa menginput nama,umur,jurusan,dan file.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<section id="aktivitas" class="reveal">
+  <div class="gallery">
+    <img src="images/job7.png" alt="">
+    <img src="images/job4.png" alt="">
+    <img src="images/job2.png" alt="">
+    <img src="images/co.png" alt="">
+     <img src="images/cc.png" alt="">
+    <img src="images/ggg.png" alt="">
+  </div>
+</section>
+
+<!-- Lightbox -->
+<div class="lightbox" id="lightbox">
+  <img src="" alt="">
+</div>
+
+<section id="contact" class="reveal">
+  <div class="glass contact-box">
+    <h2>Siap Berkembang Melalui Program Magang</h2>
+    <p>
+      Saya siap berkontribusi, belajar, dan berkembang dalam lingkungan profesional 
+      melalui program magang di bidang Web Development.
+      Saya terbuka untuk diskusi lebih lanjut melalui kontak berikut.
+    </p>
+
+    <div class="contact-cards">
+      <a href="https://github.com/marfinsss" class="contact-item">💻 GitHub</a>
+      <a href="https://instagram.com/aallll_18" class="contact-item">📸 Instagram</a>
+      <a href="https://www.tiktok.com/@tttt_18888" class="contact-item">🎵 TikTok</a>
+      <a href="https://mail.google.com/mail/u/0/?hl=en#inbox" class="contact-item">📧 Email</a>
+    </div>
+
+  </div>
+</section>
+  <footer>
+    @ Alif Juney Marfins
+  </footer>
+
+  <!-- JS External -->
+  <script src="script.js"></script>
+</body>
+</html>

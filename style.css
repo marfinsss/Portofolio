@@ -834,3 +834,87 @@
     margin-bottom: 25px;
   }
 
+/* ================= MOBILE RESPONSIVE ================= */
+
+@media (max-width: 768px) {
+
+  section{
+    padding: 90px 6%;
+  }
+
+  nav{
+    padding:15px 20px;
+  }
+
+  nav ul{
+    gap:15px;
+    font-size:14px;
+  }
+
+  .profile-img{
+    width:140px;
+    height:140px;
+  }
+
+  h1{
+    font-size:24px;
+  }
+
+  p{
+    font-size:14px;
+  }
+
+  .btn{
+    padding:10px 20px;
+    font-size:14px;
+  }
+
+  /* Achievement */
+  .achievement{
+    flex-direction:column;
+    text-align:center;
+  }
+
+  .achievement img,
+  .pdf-box iframe{
+    width:100%;
+    height:auto;
+  }
+
+  /* Soft Skill */
+  .tech-grid{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+  /* Gallery */
+  .gallery{
+    grid-template-columns:repeat(2,1fr);
+  }
+
+}
+
+
+/* ================= SMALL PHONE ================= */
+
+@media (max-width:480px){
+
+  nav ul{
+    display:none;
+  }
+
+  .logo{
+    font-size:20px;
+  }
+
+  .tech-grid{
+    grid-template-columns:1fr;
+  }
+
+  .gallery{
+    grid-template-columns:1fr;
+  }
+
+}
+img{
+  max-width:100%;
+}

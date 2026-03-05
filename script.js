@@ -114,3 +114,59 @@ function createPhoto() {
 
 // munculkan setiap 1.5 detik
 setInterval(createPhoto, 1500);
+
+
+// ================= LANGUAGE TOGGLE =================
+
+let currentLang = "id";
+
+const translations = {
+  id: {
+    nav1: "Beranda",
+    nav2: "Tentang Saya",
+    nav3: "Portofolio",
+    nav4: "Kontak",
+    halo: "Halo, Saya",
+    desc:
+      "Saya adalah seorang pelajar yang bersemangat dalam pengembangan web dan siap belajar serta berkembang di dunia industri.",
+    lihat: "Lihat Portofolio",
+    tentang: "Tentang Saya",
+    tentangDesc:
+      "Saya adalah pelajar SMK jurusan Rekayasa Perangkat Lunak yang memiliki semangat tinggi dalam pengembangan web.",
+    magang: "Siap Berkembang Melalui Program Magang",
+    magangDesc:
+      "Saya siap berkontribusi, belajar, dan berkembang dalam lingkungan profesional melalui program magang di bidang Web Development.",
+  },
+
+  en: {
+    nav1: "Home",
+    nav2: "About",
+    nav3: "Portfolio",
+    nav4: "Contact",
+    halo: "Hi, I'm",
+    desc:
+      "I am a student who is passionate about web development and ready to grow in the tech industry.",
+    lihat: "View Portfolio",
+    tentang: "About Me",
+    tentangDesc:
+      "I am a vocational high school student majoring in Software Engineering with strong passion in web development.",
+    magang: "Ready to Grow Through Internship Program",
+    magangDesc:
+      "I am ready to contribute, learn, and grow in a professional environment through a Web Development internship program.",
+  },
+};
+
+function toggleLanguage() {
+  currentLang = currentLang === "id" ? "en" : "id";
+
+  document.getElementById("langBtn").textContent =
+    currentLang === "id" ? "EN" : "ID";
+
+  document.querySelectorAll("[data-id]").forEach((element) => {
+    const key = element.getAttribute("data-id");
+    element.textContent = translations[currentLang][key];
+  });
+}
+
+
+

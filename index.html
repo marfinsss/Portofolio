@@ -19,22 +19,33 @@
 
   <!-- Navbar -->
   <nav id="navbar">
-    <div class="logo" id="logo">Alif Juney M.</div>
+    <div class="logo" id="logo">Alif</div>
     <ul>
-      <li><a href="#home">Beranda</a></li>
-      <li><a href="#about">Tentang saya</a></li>
-      <li><a href="#portfolio">Portofolio</a></li>
-      <li><a href="#contact">Kontak</a></li>
+     <li><a href="#home" data-id="nav1">Beranda</a></li>
+<li><a href="#about" data-id="nav2">Tentang Saya</a></li>
+<li><a href="#portfolio" data-id="nav3">Portofolio</a></li>
+<li><a href="#contact" data-id="nav4">Kontak</a></li>
     </ul>
-    <button class="toggle-btn" onclick="toggleDarkMode()">Dark</button>
+   <button class="toggle-btn" onclick="toggleLanguage()" id="langBtn">
+  EN
+</button>
   </nav>
 
   <!-- Hero Section -->
   <section id="home">
     <img src="images/cv2.jpeg" class="profile-img" alt="Profile">
-   <h1>Halo, Saya <span class="typing"></span></h1>
-    <p>Saya adalah seorang pelajar yang bersemangat dalam pengembangan web dan siap belajar serta berkembang di dunia industri.</p>
-    <a href="#portfolio" class="btn">Lihat Portofolio</a>
+   <h1>
+  <span data-id="halo">Halo, Saya</span>
+  <span class="typing"></span>
+</h1>
+
+<p data-id="heroDesc">
+  Saya adalah seorang pelajar yang bersemangat dalam pengembangan web dan siap belajar serta berkembang di dunia industri.
+</p>
+
+<a href="#portfolio" class="btn" data-id="lihat">
+  Lihat Portofolio
+</a>
     <div class="floating-photos">
       <div class="photo-particles"></div>
 </div>
@@ -46,17 +57,18 @@
     <!-- KIRI (Tentang Saya) -->
     <div class="about-right">
       <div class="glass-about">
-        <h2>Tentang Saya</h2>
-        <p>
-          Saya adalah pelajar SMK jurusan Rekayasa Perangkat Lunak yang memiliki semangat tinggi dalam pengembangan web.
-          Saya terus belajar membangun aplikasi berbasis web dan siap berkembang melalui program magang profesional.
-        </p>
+        <h2 data-id="tentang">Tentang Saya</h2>
+
+<p data-id="tentangDesc">
+  Saya adalah pelajar SMK jurusan Rekayasa Perangkat Lunak yang memiliki semangat tinggi dalam pengembangan web.
+  Saya terus belajar membangun aplikasi berbasis web dan siap berkembang melalui program magang profesional.
+</p>
       </div>
     </div>
 
     <!-- KANAN (Soft Skill) -->
     <div class="about-left">
-      <h3>Soft Skill</h3>
+    <h3 data-id="softskill">Soft Skill</h3>
 
       <div class="tech-grid">
         <div class="tech-item">
@@ -95,7 +107,9 @@
   <!-- Portfolio -->
 <!-- Portfolio -->
 <section id="portfolio" class="reveal">
-  <h2 style="text-align:center;">Portofolio</h2>
+<h2 style="text-align:center;" data-id="portfolioTitle">
+  Portofolio
+</h2>
 
   <div class="projects">
 
@@ -274,12 +288,15 @@
 
 <section id="contact" class="reveal">
   <div class="glass contact-box">
-    <h2>Siap Berkembang Melalui Program Magang</h2>
-    <p>
-      Saya siap berkontribusi, belajar, dan berkembang dalam lingkungan profesional 
-      melalui program magang di bidang Web Development.
-      Saya terbuka untuk diskusi lebih lanjut melalui kontak berikut.
-    </p>
+   <h2 data-id="magangTitle">
+  Siap Berkembang Melalui Program Magang
+</h2>
+
+<p data-id="magangDesc">
+  Saya siap berkontribusi, belajar, dan berkembang dalam lingkungan profesional 
+  melalui program magang di bidang Web Development.
+  Saya terbuka untuk diskusi lebih lanjut melalui kontak berikut.
+</p>
 
     <div class="contact-cards">
       <a href="https://github.com/marfinsss" class="contact-item">💻 GitHub</a>
@@ -291,7 +308,7 @@
   </div>
 </section>
   <footer>
-    @ Alif Juney Marfins
+    @Alif Juney Marfins
   </footer>
 
   <!-- JS External -->
